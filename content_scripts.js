@@ -1,6 +1,6 @@
 // Function to inject CSS to change selection color
 function changeSelectionColor(colorVal) {
-  const css = `::selection { background-color: ${colorVal}; }`;
+  const css = `::selection { background-color: ${colorVal} !important; }`;
   console.log({ colorVal });
   const style = document.createElement("style");
   style.appendChild(document.createTextNode(css));
